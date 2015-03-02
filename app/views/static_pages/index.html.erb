@@ -1,4 +1,8 @@
 <h1>HELLO WORLD!</h1>
 
-Current User is:
-<%= current_user.email %>
+<% if current_user %>
+  Current User is:
+  <%= current_user.email %>
+<% else %>
+  Nobody.  Nobody.  Nobody.  Nobody is hereeeeeee
+<% end %>
